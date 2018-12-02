@@ -88,11 +88,11 @@ t2 = 0:tsample:m;
 
 figure
 subplot(4,1,1)
-plot(t2,aligned_mic4'),grid
+plot(t2,aligned_mic4'),grid,title("Mic 4")
 subplot(4,1,2)
-plot(t2,aligned_mic1'),grid
+plot(t2,aligned_mic1'),grid,title("Mic 1"),ylabel("Amplitude")
 subplot(4,1,3)
-plot(t2,aligned_mic2'),grid
+plot(t2,aligned_mic2'),grid,title("Mic 2")
 subplot(4,1,4)
-plot(t2,aligned_mic3'),grid,xlabel("Time(s)")
+plot(t2,aligned_mic3'),grid,xlabel("Time(s)"),title("Mic 3")
 
