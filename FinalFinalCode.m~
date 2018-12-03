@@ -47,7 +47,7 @@ dT2 = Mic2AT-Mic4AT;
 dT3 = Mic3AT-Mic4AT;
 
 % Distance calculated from each Mic to the reference mic, in feet using
-% 1125.33 f/s
+% 1125.33
 D1 = dT1*1125.33;
 D2 = dT2*1125.33;
 D3 = dT2*1125.33;
