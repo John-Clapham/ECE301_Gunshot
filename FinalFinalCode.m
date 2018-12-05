@@ -94,10 +94,10 @@ pa = P1 + x*e_x + y*e_y;
 
 figure
 %positions of mics
-scatter(xloc,yloc)
+foo1 = scatter(xloc,yloc)
 hold on
 %positions of sound source
-scatter(Sx,Sy);
+foo2 = scatter(Sx,Sy);
 
 %circles with radi of distance from mic to source
 hold on
@@ -117,6 +117,10 @@ plot([xloc(3),xunit3(80)],[yloc(3),yunit3(80)]);
 
 %plot esmitated location
 hold on
-scatter(pa(2),pa(1));
+foo3 = scatter(pa(2),pa(1),'filled');
 
 grid on
+xlabel('x position (ft)')
+ylabel('y position(ft)')
+title('Location Estimation of Gunshot')
+legend([foo1, foo2, foo3],{'Microphone Positions','Gunshot Position','Estimated Position'})
